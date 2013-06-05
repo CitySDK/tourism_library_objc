@@ -33,9 +33,8 @@ NSString* const parameterTerms[] = {
     @"list",
     @"offset",
     @"code",
-    @"event",
+    @"name",
     @"limit",
-    @"route",
     @"time"
 };
 

@@ -21,6 +21,13 @@
 
 #import "Resources.h"
 
+/**
+ * \brief Represents the resources provided by a server. It contains all the available
+ * {@link HypermediaLink} given by server alongside their API versions.
+ *
+ * @author Pedro Cruz
+ *
+ */
 @implementation Resources
 @synthesize resources = _resources;
 

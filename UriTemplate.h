@@ -21,14 +21,6 @@
 #import <Foundation/Foundation.h>
 #import "Operator.h"
 
-/**
- * A simplified implementation of the URI Template (<a target="_blank"
- * href="http://tools.ietf.org/html/rfc6570">RFC6570</a>) used to build the
- * server URIs.
- *
- * @author Pedro Cruz
- *
- */
 @interface UriTemplate : NSObject
 @property (nonatomic, copy) NSString *template;
 @property (nonatomic, retain) NSMutableDictionary *values;

@@ -29,7 +29,8 @@ NSString* const resourceTerm[] = {
     @"find-event-relation",
     @"find-route",
     @"find-categories",
-    @"find-tags"
+    @"find-tags",
+    @"find-code"
 };
 
 NSRange const resourceType[] = {
@@ -37,7 +38,8 @@ NSRange const resourceType[] = {
     {2, 2},
     {4, 1},
     {5, 1},
-    {6, 1}
+    {6, 1},
+    {7, 1}
 };
 
 /**

@@ -43,9 +43,8 @@ typedef enum ParameterTerms {
 	PARAMETER_LIST, /**< The parameter for lists */
 	PARAMETER_OFFSET, /**< The parameter for the limitation of results of POIs */
 	PARAMETER_CODE, /**< The parameter for the search of POI through QR Codes or NFC */
-	PARAMETER_EVENT, /**< The parameter to be used to specify a given event */
+	PARAMETER_NAME, /**< The parameter to be used to specify a given description of an event or route */
 	PARAMETER_LIMIT, /**< The parameter for the limitation of results of POIs */
-	PARAMETER_ROUTE, /**< The parameter to search for routes */
 	PARAMETER_TIME, /**< The term for the search of an Event through the use of time data */
     LAST_PARAMETER /**< Not used */
 } ParameterTerm;

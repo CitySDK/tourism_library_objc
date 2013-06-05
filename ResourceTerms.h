@@ -39,6 +39,7 @@ typedef enum ResourceTerm {
     FIND_ROUTE, /**< The term for the search of Routes */
 	FIND_CATEGORIES, /**< The term for the search for the list of categories */
     FIND_TAGS, /**< The term for the search for the list of tags */
+    FIND_CODE, /**< Tht term to search for QR or barcodes */
     LAST_RESOURCE /**< Not used */
 } ResourceTerm;
 
