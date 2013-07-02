@@ -360,6 +360,22 @@ do { \
 }
 
 /**
+ * \brief Returns the a given generic object.
+ * @param base the base URL of the object.
+ * @param baseID the ID of the object.
+ * @param err error can be set to the following:
+ * <ul>
+ * <li>in case of socket errors;</li>
+ * <li>in case of unforeseen errors;</li>
+ * <li>if the server returns a code different from HTTP 200 OK.</li>
+ * @return a {@link POI} containing the description of the given object.
+ */
+- (POI *) getGeneric:(NSString *) base withID:(NSString *) baseID :(NSError **) err
+{
+    return (POI *)[self getSingle:base withId:baseID usingParser:@selector(parseJsonAsGeneric:) :err];
+}
+
+/**
  * \brief Returns the list of {@link Category} available. List should contain a parameter its value set to one of the following:
  * <ul>
  * <li>poi;</li>

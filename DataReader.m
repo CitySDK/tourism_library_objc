@@ -162,6 +162,32 @@ static NSString* getSelectorString[] = {
 }
 
 /**
+ * \brief Gets the categories in a given language.
+ * @param poi the object to get the data.
+ * @param locale the wanted language.
+ * @return a NSArray containing the following: the value of the categories in the desired language or an empty array if none found.
+ */
++ (NSArray *) getCategories: (POI *)poi withLocale: (NSLocale *)locale
+{
+    NSMutableArray* cats = [[NSMutableArray alloc] init];
+    if(!poi)
+        return cats;
+    
+    NSArray* categories = poi.category;
+    for(POITermType* category in categories) {
+        NSLocale *catLang = [DataReader getLocaleFromString:category.lang];
+        if([category.term isEqualToString:@"category"]
+                && [[catLang objectForKey:NSLocaleLanguageCode] isEqual:[locale objectForKey:NSLocaleLanguageCode]]) {
+            if(category.value) {
+                [cats addObject:category.value];
+            }
+        }
+    }
+    
+    return cats;
+}
+
+/**
  * \brief Gets the price in a given language.
  * @param poi the object to get the data.
  * @param locale the wanted language.

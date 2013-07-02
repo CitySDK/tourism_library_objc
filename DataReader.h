@@ -42,6 +42,7 @@ typedef enum field {
 + (NSDictionary *) getAvailableLangs: (POI *)poi fromField:(Field) field;
 + (NSString *) getLabel: (POI *)poi withTerm: (Term)term andLocale: (NSLocale *)locale;
 + (NSString *) getDescription: (POI *)poi withLocale: (NSLocale *)locale;
++ (NSArray *) getCategories: (POI *)poi withLocale: (NSLocale *)locale;
 + (NSString *) getPrice: (POI *)poi withLocale: (NSLocale *)locale;
 + (NSString *) getWaitingTime: (POI *)poi;
 + (NSString *) getOccupation: (POI *)poi;

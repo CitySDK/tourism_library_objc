@@ -56,5 +56,6 @@
 - (PointOfInterest *) getPoi:(NSString *) poiBase withId:(NSString *) poiID :(NSError **) err;
 - (Event *) getEvent:(NSString *) eventBase withID:(NSString *) eventID :(NSError **) err;
 - (Route *) getRoute:(NSString *) routeBase withID:(NSString *) routeID :(NSError **) err;
+- (POI *) getGeneric:(NSString *) base withID:(NSString *) baseID :(NSError **) err;
 
 @end
